@@ -36,7 +36,10 @@ class AuthViewController: UIViewController {
         view.backgroundColor = .white
         setupConstrains()
     }
-    
+}
+
+//MARK: - Setup Constraints
+extension AuthViewController {
     private func setupConstrains() {
         
         logoImageView.translatesAutoresizingMaskIntoConstraints = false
@@ -52,25 +55,22 @@ class AuthViewController: UIViewController {
         view.addSubview(stackView)
         
         NSLayoutConstraint.activate([
-            logoImageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 160),
+            logoImageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 100),
             logoImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
         
         NSLayoutConstraint.activate([
-            stackView.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 160),
+            stackView.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 130),
             stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
             stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40)
         ])
-      
     }
-
 }
 
 //MARK: SwiftUI
 import SwiftUI
 
 struct AuthViewControllerProvider: PreviewProvider {
-    
     
     static var previews: some View {
         ContainerView()
@@ -79,21 +79,16 @@ struct AuthViewControllerProvider: PreviewProvider {
     
     struct ContainerView: UIViewControllerRepresentable {
         
-        let viewController = AuthViewController()
+        let authViewController = AuthViewController()
         
         func makeUIViewController(context: Context) -> some UIViewController {
-            return viewController
+            return authViewController
         }
         
         func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
-            
+
         }
-        
     }
-    
-    
-    
-    
 }
 
 
