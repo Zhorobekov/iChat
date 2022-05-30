@@ -12,8 +12,8 @@ class AuthViewController: UIViewController {
     let logoImageView = UIImageView(image: #imageLiteral(resourceName: "Logo"), contentMode: .scaleAspectFit)
     
     let googleLabel = UILabel(text: "Get started with")
-    let email = UILabel(text: "Or sign up with")
-    let alreadyOnboard = UILabel(text: "Already on board?")
+    let emailLabel = UILabel(text: "Or sign up with")
+    let alreadyOnboardLabel = UILabel(text: "Already on board?")
     
     
     let emailButton = UIButton(title: "Email",
@@ -33,9 +33,36 @@ class AuthViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .red
+        view.backgroundColor = .white
+        setupConstrains()
     }
+    
+    private func setupConstrains() {
+        
+        logoImageView.translatesAutoresizingMaskIntoConstraints = false
+        
+        let googleView = ButtonFromView(label: googleLabel, button: googleButton)
+        let emailView = ButtonFromView(label: emailLabel, button: emailButton)
+        let loginView = ButtonFromView(label: alreadyOnboardLabel, button: loginButton)
+        
+        let stackView = UIStackView(arrangedSubviews: [googleView, emailView, loginView], axis: .vertical, spacing: 40)
+        stackView.translatesAutoresizingMaskIntoConstraints = false
 
+        view.addSubview(logoImageView)
+        view.addSubview(stackView)
+        
+        NSLayoutConstraint.activate([
+            logoImageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 160),
+            logoImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+        ])
+        
+        NSLayoutConstraint.activate([
+            stackView.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 160),
+            stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
+            stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40)
+        ])
+      
+    }
 
 }
 
