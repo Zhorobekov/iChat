@@ -12,6 +12,8 @@
 		56276B3C284532B500788773 /* OneLineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56276B3B284532B500788773 /* OneLineTextField.swift */; };
 		56276B3E2845F13900788773 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56276B3D2845F13900788773 /* LoginViewController.swift */; };
 		56276B402847619B00788773 /* SetupProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56276B3F2847619B00788773 /* SetupProfileViewController.swift */; };
+		56276B422847E2C400788773 /* AddPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56276B412847E2C300788773 /* AddPhotoView.swift */; };
+		56276B442847E94600788773 /* SegmentedControl + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56276B432847E94600788773 /* SegmentedControl + Extension.swift */; };
 		565B7B65284527720028AFAE /* ButtonFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565B7B64284527720028AFAE /* ButtonFormView.swift */; };
 		5664801428434AE400121057 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664801328434AE400121057 /* AppDelegate.swift */; };
 		5664801828434AE400121057 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664801728434AE400121057 /* AuthViewController.swift */; };
@@ -30,6 +32,8 @@
 		56276B3B284532B500788773 /* OneLineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneLineTextField.swift; sourceTree = "<group>"; };
 		56276B3D2845F13900788773 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		56276B3F2847619B00788773 /* SetupProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupProfileViewController.swift; sourceTree = "<group>"; };
+		56276B412847E2C300788773 /* AddPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoView.swift; sourceTree = "<group>"; };
+		56276B432847E94600788773 /* SegmentedControl + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SegmentedControl + Extension.swift"; sourceTree = "<group>"; };
 		565B7B64284527720028AFAE /* ButtonFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFormView.swift; sourceTree = "<group>"; };
 		5664801028434AE400121057 /* iChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5664801328434AE400121057 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +68,7 @@
 				56E06ED328439AB40073ADA7 /* UIColor + Extension.swift */,
 				56E06ED1284399E50073ADA7 /* UIFont + Extension.swift */,
 				56276B3728452BDA00788773 /* StackView + Extension.swift */,
+				56276B432847E94600788773 /* SegmentedControl + Extension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -71,6 +76,7 @@
 		565B7B63284526610028AFAE /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				56276B412847E2C300788773 /* AddPhotoView.swift */,
 				56276B3B284532B500788773 /* OneLineTextField.swift */,
 				565B7B64284527720028AFAE /* ButtonFormView.swift */,
 				565B7B62284526570028AFAE /* UIKit */,
@@ -180,6 +186,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56276B442847E94600788773 /* SegmentedControl + Extension.swift in Sources */,
 				56276B3E2845F13900788773 /* LoginViewController.swift in Sources */,
 				56276B3828452BDA00788773 /* StackView + Extension.swift in Sources */,
 				56E06ED628439D6D0073ADA7 /* Label + Extension.swift in Sources */,
@@ -189,6 +196,7 @@
 				56E06ED828439E420073ADA7 /* UIImageView + Extension.swift in Sources */,
 				56276B3C284532B500788773 /* OneLineTextField.swift in Sources */,
 				56276B402847619B00788773 /* SetupProfileViewController.swift in Sources */,
+				56276B422847E2C400788773 /* AddPhotoView.swift in Sources */,
 				5664801828434AE400121057 /* AuthViewController.swift in Sources */,
 				5664801428434AE400121057 /* AppDelegate.swift in Sources */,
 				56E06ECD28438B860073ADA7 /* UIButoon + Extension.swift in Sources */,
