@@ -81,8 +81,6 @@
 				56E06ED1284399E50073ADA7 /* UIFont + Extension.swift */,
 				56276B3728452BDA00788773 /* StackView + Extension.swift */,
 				56276B432847E94600788773 /* SegmentedControl + Extension.swift */,
-				560161B2284CAEDE00079B40 /* activeChats.json */,
-				560161B1284CAEDE00079B40 /* waitingChats.json */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -122,6 +120,8 @@
 				56973DFA284A65E60098769D /* Controllers */,
 				56973DF9284A65C80098769D /* Signin&Auth */,
 				565B7B63284526610028AFAE /* Extensions */,
+				560161B2284CAEDE00079B40 /* activeChats.json */,
+				560161B1284CAEDE00079B40 /* waitingChats.json */,
 				5664801C28434AE600121057 /* Assets.xcassets */,
 				5664801E28434AE600121057 /* LaunchScreen.storyboard */,
 				5664802128434AE600121057 /* Info.plist */,
