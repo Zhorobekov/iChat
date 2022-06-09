@@ -59,7 +59,7 @@ struct WaitingChatCellProvider: PreviewProvider {
     
     struct ContainerView: UIViewControllerRepresentable {
         
-        let mainTabBarViewController = ListViewController()
+        let mainTabBarViewController = MainTabBarController()
         
         func makeUIViewController(context: Context) -> some UIViewController {
             return mainTabBarViewController
