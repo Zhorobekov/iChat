@@ -10,6 +10,7 @@
 		560161B3284CAEDE00079B40 /* waitingChats.json in Resources */ = {isa = PBXBuildFile; fileRef = 560161B1284CAEDE00079B40 /* waitingChats.json */; };
 		560161B4284CAEDE00079B40 /* activeChats.json in Resources */ = {isa = PBXBuildFile; fileRef = 560161B2284CAEDE00079B40 /* activeChats.json */; };
 		560161B6284CAF0E00079B40 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560161B5284CAF0E00079B40 /* Bundle-Decodable.swift */; };
+		5617599E2852465B00DFA113 /* ActiveChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5617599D2852465B00DFA113 /* ActiveChatCell.swift */; };
 		56276B3828452BDA00788773 /* StackView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56276B3728452BDA00788773 /* StackView + Extension.swift */; };
 		56276B3A2845305C00788773 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56276B392845305C00788773 /* SignUpViewController.swift */; };
 		56276B3C284532B500788773 /* OneLineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56276B3B284532B500788773 /* OneLineTextField.swift */; };
@@ -36,6 +37,7 @@
 		560161B1284CAEDE00079B40 /* waitingChats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = waitingChats.json; sourceTree = "<group>"; };
 		560161B2284CAEDE00079B40 /* activeChats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = activeChats.json; sourceTree = "<group>"; };
 		560161B5284CAF0E00079B40 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
+		5617599D2852465B00DFA113 /* ActiveChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveChatCell.swift; sourceTree = "<group>"; };
 		56276B3728452BDA00788773 /* StackView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StackView + Extension.swift"; sourceTree = "<group>"; };
 		56276B392845305C00788773 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		56276B3B284532B500788773 /* OneLineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneLineTextField.swift; sourceTree = "<group>"; };
@@ -71,6 +73,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5617599C2852464F00DFA113 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				5617599D2852465B00DFA113 /* ActiveChatCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		565B7B62284526570028AFAE /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +153,7 @@
 		56973DFA284A65E60098769D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5617599C2852464F00DFA113 /* Cell */,
 				56973DFB284A66080098769D /* MainTabBarController.swift */,
 				56973DF7284A64A70098769D /* ListViewController.swift */,
 				56973DFD284A66580098769D /* PeopleViewController.swift */,
@@ -225,6 +236,7 @@
 				56276B442847E94600788773 /* SegmentedControl + Extension.swift in Sources */,
 				56276B3E2845F13900788773 /* LoginViewController.swift in Sources */,
 				56276B3828452BDA00788773 /* StackView + Extension.swift in Sources */,
+				5617599E2852465B00DFA113 /* ActiveChatCell.swift in Sources */,
 				56E06ED628439D6D0073ADA7 /* Label + Extension.swift in Sources */,
 				56E06ED2284399E50073ADA7 /* UIFont + Extension.swift in Sources */,
 				56973DFE284A66580098769D /* PeopleViewController.swift in Sources */,
