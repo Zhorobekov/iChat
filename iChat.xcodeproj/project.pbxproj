@@ -11,6 +11,7 @@
 		560161B4284CAEDE00079B40 /* activeChats.json in Resources */ = {isa = PBXBuildFile; fileRef = 560161B2284CAEDE00079B40 /* activeChats.json */; };
 		560161B6284CAF0E00079B40 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560161B5284CAF0E00079B40 /* Bundle-Decodable.swift */; };
 		5617599E2852465B00DFA113 /* ActiveChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5617599D2852465B00DFA113 /* ActiveChatCell.swift */; };
+		561759A028525D3B00DFA113 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5617599F28525D3B00DFA113 /* GradientView.swift */; };
 		56276B3828452BDA00788773 /* StackView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56276B3728452BDA00788773 /* StackView + Extension.swift */; };
 		56276B3A2845305C00788773 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56276B392845305C00788773 /* SignUpViewController.swift */; };
 		56276B3C284532B500788773 /* OneLineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56276B3B284532B500788773 /* OneLineTextField.swift */; };
@@ -38,6 +39,7 @@
 		560161B2284CAEDE00079B40 /* activeChats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = activeChats.json; sourceTree = "<group>"; };
 		560161B5284CAF0E00079B40 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
 		5617599D2852465B00DFA113 /* ActiveChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveChatCell.swift; sourceTree = "<group>"; };
+		5617599F28525D3B00DFA113 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		56276B3728452BDA00788773 /* StackView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StackView + Extension.swift"; sourceTree = "<group>"; };
 		56276B392845305C00788773 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		56276B3B284532B500788773 /* OneLineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneLineTextField.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 		565B7B63284526610028AFAE /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				5617599F28525D3B00DFA113 /* GradientView.swift */,
 				56276B412847E2C300788773 /* AddPhotoView.swift */,
 				56276B3B284532B500788773 /* OneLineTextField.swift */,
 				565B7B64284527720028AFAE /* ButtonFormView.swift */,
@@ -244,6 +247,7 @@
 				56276B3A2845305C00788773 /* SignUpViewController.swift in Sources */,
 				56E06ED828439E420073ADA7 /* UIImageView + Extension.swift in Sources */,
 				56276B3C284532B500788773 /* OneLineTextField.swift in Sources */,
+				561759A028525D3B00DFA113 /* GradientView.swift in Sources */,
 				56276B402847619B00788773 /* SetupProfileViewController.swift in Sources */,
 				56276B422847E2C400788773 /* AddPhotoView.swift in Sources */,
 				5664801828434AE400121057 /* AuthViewController.swift in Sources */,
