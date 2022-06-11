@@ -15,7 +15,7 @@
 		561759A2285260F200DFA113 /* WaitingChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561759A1285260F200DFA113 /* WaitingChatCell.swift */; };
 		561759A4285261B100DFA113 /* SelfConfiguringCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561759A3285261B100DFA113 /* SelfConfiguringCell.swift */; };
 		561759A7285265B700DFA113 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561759A6285265B700DFA113 /* SectionHeader.swift */; };
-		561759AA2853BD7C00DFA113 /* MChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561759A92853BD7C00DFA113 /* MChatModel.swift */; };
+		561759AA2853BD7C00DFA113 /* MChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561759A92853BD7C00DFA113 /* MChat.swift */; };
 		56276B3828452BDA00788773 /* StackView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56276B3728452BDA00788773 /* StackView + Extension.swift */; };
 		56276B3A2845305C00788773 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56276B392845305C00788773 /* SignUpViewController.swift */; };
 		56276B3C284532B500788773 /* OneLineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56276B3B284532B500788773 /* OneLineTextField.swift */; };
@@ -31,6 +31,8 @@
 		56973DF8284A64A70098769D /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56973DF7284A64A70098769D /* ListViewController.swift */; };
 		56973DFC284A66080098769D /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56973DFB284A66080098769D /* MainTabBarController.swift */; };
 		56973DFE284A66580098769D /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56973DFD284A66580098769D /* PeopleViewController.swift */; };
+		56BEFA4E28549F1000CE95F2 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 56BEFA4D28549F1000CE95F2 /* users.json */; };
+		56BEFA512854A02E00CE95F2 /* MUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BEFA502854A02E00CE95F2 /* MUser.swift */; };
 		56E06ECD28438B860073ADA7 /* UIButoon + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E06ECC28438B860073ADA7 /* UIButoon + Extension.swift */; };
 		56E06ED2284399E50073ADA7 /* UIFont + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E06ED1284399E50073ADA7 /* UIFont + Extension.swift */; };
 		56E06ED428439AB40073ADA7 /* UIColor + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E06ED328439AB40073ADA7 /* UIColor + Extension.swift */; };
@@ -47,7 +49,7 @@
 		561759A1285260F200DFA113 /* WaitingChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingChatCell.swift; sourceTree = "<group>"; };
 		561759A3285261B100DFA113 /* SelfConfiguringCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfConfiguringCell.swift; sourceTree = "<group>"; };
 		561759A6285265B700DFA113 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
-		561759A92853BD7C00DFA113 /* MChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MChatModel.swift; sourceTree = "<group>"; };
+		561759A92853BD7C00DFA113 /* MChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MChat.swift; sourceTree = "<group>"; };
 		56276B3728452BDA00788773 /* StackView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StackView + Extension.swift"; sourceTree = "<group>"; };
 		56276B392845305C00788773 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		56276B3B284532B500788773 /* OneLineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneLineTextField.swift; sourceTree = "<group>"; };
@@ -65,6 +67,8 @@
 		56973DF7284A64A70098769D /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		56973DFB284A66080098769D /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		56973DFD284A66580098769D /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
+		56BEFA4D28549F1000CE95F2 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
+		56BEFA502854A02E00CE95F2 /* MUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUser.swift; sourceTree = "<group>"; };
 		56E06ECC28438B860073ADA7 /* UIButoon + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButoon + Extension.swift"; sourceTree = "<group>"; };
 		56E06ED1284399E50073ADA7 /* UIFont + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont + Extension.swift"; sourceTree = "<group>"; };
 		56E06ED328439AB40073ADA7 /* UIColor + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
@@ -103,7 +107,8 @@
 		561759A82853BD6F00DFA113 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				561759A92853BD7C00DFA113 /* MChatModel.swift */,
+				561759A92853BD7C00DFA113 /* MChat.swift */,
+				56BEFA502854A02E00CE95F2 /* MUser.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -162,6 +167,7 @@
 				565B7B63284526610028AFAE /* Extensions */,
 				560161B2284CAEDE00079B40 /* activeChats.json */,
 				560161B1284CAEDE00079B40 /* waitingChats.json */,
+				56BEFA4D28549F1000CE95F2 /* users.json */,
 				5664801C28434AE600121057 /* Assets.xcassets */,
 				5664801E28434AE600121057 /* LaunchScreen.storyboard */,
 				5664802128434AE600121057 /* Info.plist */,
@@ -184,12 +190,20 @@
 			isa = PBXGroup;
 			children = (
 				56973DFB284A66080098769D /* MainTabBarController.swift */,
-				561759A6285265B700DFA113 /* SectionHeader.swift */,
+				56BEFA4F28549F2300CE95F2 /* Header */,
 				56973DF7284A64A70098769D /* ListViewController.swift */,
 				56973DFD284A66580098769D /* PeopleViewController.swift */,
 				5617599C2852464F00DFA113 /* Cell */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		56BEFA4F28549F2300CE95F2 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				561759A6285265B700DFA113 /* SectionHeader.swift */,
+			);
+			path = Header;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +264,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56BEFA4E28549F1000CE95F2 /* users.json in Resources */,
 				560161B3284CAEDE00079B40 /* waitingChats.json in Resources */,
 				5664802028434AE600121057 /* LaunchScreen.storyboard in Resources */,
 				5664801D28434AE600121057 /* Assets.xcassets in Resources */,
@@ -270,6 +285,7 @@
 				5617599E2852465B00DFA113 /* ActiveChatCell.swift in Sources */,
 				56E06ED628439D6D0073ADA7 /* Label + Extension.swift in Sources */,
 				56E06ED2284399E50073ADA7 /* UIFont + Extension.swift in Sources */,
+				56BEFA512854A02E00CE95F2 /* MUser.swift in Sources */,
 				56973DFE284A66580098769D /* PeopleViewController.swift in Sources */,
 				565B7B65284527720028AFAE /* ButtonFormView.swift in Sources */,
 				56276B3A2845305C00788773 /* SignUpViewController.swift in Sources */,
@@ -283,7 +299,7 @@
 				561759A2285260F200DFA113 /* WaitingChatCell.swift in Sources */,
 				5664801428434AE400121057 /* AppDelegate.swift in Sources */,
 				56E06ECD28438B860073ADA7 /* UIButoon + Extension.swift in Sources */,
-				561759AA2853BD7C00DFA113 /* MChatModel.swift in Sources */,
+				561759AA2853BD7C00DFA113 /* MChat.swift in Sources */,
 				56973DF8284A64A70098769D /* ListViewController.swift in Sources */,
 				561759A7285265B700DFA113 /* SectionHeader.swift in Sources */,
 				56E06ED428439AB40073ADA7 /* UIColor + Extension.swift in Sources */,
