@@ -26,6 +26,7 @@
 		5657C256285B1B3E00DD0A6C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5657C255285B1B3E00DD0A6C /* ProfileViewController.swift */; };
 		5657C258285B206600DD0A6C /* InsertableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5657C257285B206600DD0A6C /* InsertableTextField.swift */; };
 		5657C25A285B23CD00DD0A6C /* UIView + Extension .swift in Sources */ = {isa = PBXBuildFile; fileRef = 5657C259285B23CD00DD0A6C /* UIView + Extension .swift */; };
+		5657C25C285B387100DD0A6C /* ChatRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5657C25B285B387100DD0A6C /* ChatRequestViewController.swift */; };
 		565B7B65284527720028AFAE /* ButtonFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565B7B64284527720028AFAE /* ButtonFormView.swift */; };
 		5664801428434AE400121057 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664801328434AE400121057 /* AppDelegate.swift */; };
 		5664801828434AE400121057 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664801728434AE400121057 /* AuthViewController.swift */; };
@@ -65,6 +66,7 @@
 		5657C255285B1B3E00DD0A6C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		5657C257285B206600DD0A6C /* InsertableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertableTextField.swift; sourceTree = "<group>"; };
 		5657C259285B23CD00DD0A6C /* UIView + Extension .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extension .swift"; sourceTree = "<group>"; };
+		5657C25B285B387100DD0A6C /* ChatRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRequestViewController.swift; sourceTree = "<group>"; };
 		565B7B64284527720028AFAE /* ButtonFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFormView.swift; sourceTree = "<group>"; };
 		5664801028434AE400121057 /* iChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5664801328434AE400121057 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 				56973DF7284A64A70098769D /* ListViewController.swift */,
 				56973DFD284A66580098769D /* PeopleViewController.swift */,
 				5657C255285B1B3E00DD0A6C /* ProfileViewController.swift */,
+				5657C25B285B387100DD0A6C /* ChatRequestViewController.swift */,
 				56BEFA4F28549F2300CE95F2 /* Header */,
 				5617599C2852464F00DFA113 /* Cell */,
 			);
@@ -296,6 +299,7 @@
 			files = (
 				56276B442847E94600788773 /* SegmentedControl + Extension.swift in Sources */,
 				56276B3E2845F13900788773 /* LoginViewController.swift in Sources */,
+				5657C25C285B387100DD0A6C /* ChatRequestViewController.swift in Sources */,
 				56276B3828452BDA00788773 /* StackView + Extension.swift in Sources */,
 				5617599E2852465B00DFA113 /* ActiveChatCell.swift in Sources */,
 				5657C258285B206600DD0A6C /* InsertableTextField.swift in Sources */,
