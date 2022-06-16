@@ -23,6 +23,7 @@
 		56276B402847619B00788773 /* SetupProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56276B3F2847619B00788773 /* SetupProfileViewController.swift */; };
 		56276B422847E2C400788773 /* AddPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56276B412847E2C300788773 /* AddPhotoView.swift */; };
 		56276B442847E94600788773 /* SegmentedControl + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56276B432847E94600788773 /* SegmentedControl + Extension.swift */; };
+		5657C256285B1B3E00DD0A6C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5657C255285B1B3E00DD0A6C /* ProfileViewController.swift */; };
 		565B7B65284527720028AFAE /* ButtonFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565B7B64284527720028AFAE /* ButtonFormView.swift */; };
 		5664801428434AE400121057 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664801328434AE400121057 /* AppDelegate.swift */; };
 		5664801828434AE400121057 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664801728434AE400121057 /* AuthViewController.swift */; };
@@ -59,6 +60,7 @@
 		56276B3F2847619B00788773 /* SetupProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupProfileViewController.swift; sourceTree = "<group>"; };
 		56276B412847E2C300788773 /* AddPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoView.swift; sourceTree = "<group>"; };
 		56276B432847E94600788773 /* SegmentedControl + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SegmentedControl + Extension.swift"; sourceTree = "<group>"; };
+		5657C255285B1B3E00DD0A6C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		565B7B64284527720028AFAE /* ButtonFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFormView.swift; sourceTree = "<group>"; };
 		5664801028434AE400121057 /* iChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5664801328434AE400121057 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -196,9 +198,10 @@
 			isa = PBXGroup;
 			children = (
 				56973DFB284A66080098769D /* MainTabBarController.swift */,
-				56BEFA4F28549F2300CE95F2 /* Header */,
 				56973DF7284A64A70098769D /* ListViewController.swift */,
 				56973DFD284A66580098769D /* PeopleViewController.swift */,
+				5657C255285B1B3E00DD0A6C /* ProfileViewController.swift */,
+				56BEFA4F28549F2300CE95F2 /* Header */,
 				5617599C2852464F00DFA113 /* Cell */,
 			);
 			path = Controllers;
@@ -298,6 +301,7 @@
 				56BEFA552854B84300CE95F2 /* UIViewController + Extension.swift in Sources */,
 				56276B3A2845305C00788773 /* SignUpViewController.swift in Sources */,
 				56E06ED828439E420073ADA7 /* UIImageView + Extension.swift in Sources */,
+				5657C256285B1B3E00DD0A6C /* ProfileViewController.swift in Sources */,
 				56276B3C284532B500788773 /* OneLineTextField.swift in Sources */,
 				561759A4285261B100DFA113 /* SelfConfiguringCell.swift in Sources */,
 				561759A028525D3B00DFA113 /* GradientView.swift in Sources */,
