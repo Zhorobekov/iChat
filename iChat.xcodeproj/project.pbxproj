@@ -24,6 +24,8 @@
 		56276B422847E2C400788773 /* AddPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56276B412847E2C300788773 /* AddPhotoView.swift */; };
 		56276B442847E94600788773 /* SegmentedControl + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56276B432847E94600788773 /* SegmentedControl + Extension.swift */; };
 		5657C256285B1B3E00DD0A6C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5657C255285B1B3E00DD0A6C /* ProfileViewController.swift */; };
+		5657C258285B206600DD0A6C /* InsertableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5657C257285B206600DD0A6C /* InsertableTextField.swift */; };
+		5657C25A285B23CD00DD0A6C /* UIView + Extension .swift in Sources */ = {isa = PBXBuildFile; fileRef = 5657C259285B23CD00DD0A6C /* UIView + Extension .swift */; };
 		565B7B65284527720028AFAE /* ButtonFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565B7B64284527720028AFAE /* ButtonFormView.swift */; };
 		5664801428434AE400121057 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664801328434AE400121057 /* AppDelegate.swift */; };
 		5664801828434AE400121057 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664801728434AE400121057 /* AuthViewController.swift */; };
@@ -61,6 +63,8 @@
 		56276B412847E2C300788773 /* AddPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoView.swift; sourceTree = "<group>"; };
 		56276B432847E94600788773 /* SegmentedControl + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SegmentedControl + Extension.swift"; sourceTree = "<group>"; };
 		5657C255285B1B3E00DD0A6C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		5657C257285B206600DD0A6C /* InsertableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertableTextField.swift; sourceTree = "<group>"; };
+		5657C259285B23CD00DD0A6C /* UIView + Extension .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extension .swift"; sourceTree = "<group>"; };
 		565B7B64284527720028AFAE /* ButtonFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFormView.swift; sourceTree = "<group>"; };
 		5664801028434AE400121057 /* iChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5664801328434AE400121057 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +129,7 @@
 			children = (
 				56E06ED728439E420073ADA7 /* UIImageView + Extension.swift */,
 				56E06ECC28438B860073ADA7 /* UIButoon + Extension.swift */,
+				5657C259285B23CD00DD0A6C /* UIView + Extension .swift */,
 				56E06ED528439D6D0073ADA7 /* Label + Extension.swift */,
 				56E06ED328439AB40073ADA7 /* UIColor + Extension.swift */,
 				56E06ED1284399E50073ADA7 /* UIFont + Extension.swift */,
@@ -138,6 +143,7 @@
 		565B7B63284526610028AFAE /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				5657C257285B206600DD0A6C /* InsertableTextField.swift */,
 				5617599F28525D3B00DFA113 /* GradientView.swift */,
 				56276B412847E2C300788773 /* AddPhotoView.swift */,
 				56276B3B284532B500788773 /* OneLineTextField.swift */,
@@ -292,6 +298,7 @@
 				56276B3E2845F13900788773 /* LoginViewController.swift in Sources */,
 				56276B3828452BDA00788773 /* StackView + Extension.swift in Sources */,
 				5617599E2852465B00DFA113 /* ActiveChatCell.swift in Sources */,
+				5657C258285B206600DD0A6C /* InsertableTextField.swift in Sources */,
 				56E06ED628439D6D0073ADA7 /* Label + Extension.swift in Sources */,
 				56BEFA532854B6A700CE95F2 /* UserCell.swift in Sources */,
 				56E06ED2284399E50073ADA7 /* UIFont + Extension.swift in Sources */,
@@ -307,6 +314,7 @@
 				561759A028525D3B00DFA113 /* GradientView.swift in Sources */,
 				56276B402847619B00788773 /* SetupProfileViewController.swift in Sources */,
 				56276B422847E2C400788773 /* AddPhotoView.swift in Sources */,
+				5657C25A285B23CD00DD0A6C /* UIView + Extension .swift in Sources */,
 				5664801828434AE400121057 /* AuthViewController.swift in Sources */,
 				561759A2285260F200DFA113 /* WaitingChatCell.swift in Sources */,
 				5664801428434AE400121057 /* AppDelegate.swift in Sources */,
