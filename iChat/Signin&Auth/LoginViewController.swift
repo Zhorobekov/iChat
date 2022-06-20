@@ -49,6 +49,12 @@ class LoginViewController: UIViewController {
         setupConstraints()
         
         googleButton.customizeGoogleButton()
+        
+        loginButton.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
+    }
+    
+    @objc private func loginButtonTapped() {
+        print(#function)
     }
 }
 

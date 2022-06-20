@@ -35,7 +35,14 @@ class  SignUpViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         setupConstraints()
+        
+        signUpButton.addTarget(self, action: #selector(signUpButtonTapped), for: .touchUpInside)
     }
+    
+    @objc private func signUpButtonTapped() {
+        print(#function)
+    }
+    
 }
 
 //MARK: - Setup Constraints

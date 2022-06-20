@@ -30,6 +30,9 @@ class AuthViewController: UIViewController {
                                 isShadow: true,
                                 backgroundColor: .white)
     
+    let signUpViewController = SignUpViewController()
+    let loginViewController = LoginViewController()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +40,19 @@ class AuthViewController: UIViewController {
         setupConstrains()
         
         googleButton.customizeGoogleButton()
+        
+        emailButton.addTarget(self, action: #selector(emailButtonTapped), for: .touchUpInside)
+        loginButton.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
+    }
+    
+    @objc private func emailButtonTapped() {
+        print(#function)
+        present(signUpViewController, animated: true, completion: nil)
+    }
+    
+    @objc private func loginButtonTapped() {
+        print(#function)
+        present(loginViewController, animated: true, completion: nil)
     }
 }
 
