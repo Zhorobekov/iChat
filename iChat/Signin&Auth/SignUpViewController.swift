@@ -40,9 +40,29 @@ class  SignUpViewController: UIViewController {
     }
     
     @objc private func signUpButtonTapped() {
-        print(#function)
+        AuthService.shared.register(email: emailTextField.text,
+                                    password: passwordTextField.text,
+                                    confirmPassword: confirmPasswordTextField.text) { result in
+            switch result {
+                
+            case .success(let user):
+                self.showAlert(with: "Успешно", and: "Вы зарегистрированы")
+                print(user.email)
+            case .failure(let error):
+                self.showAlert(with: "Ошибка", and: error.localizedDescription)
+            }
+        }
     }
     
+}
+
+extension UIViewController {
+    func showAlert(with title: String, and message: String ) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alertController.addAction(okAction)
+        present(alertController, animated: true, completion: nil)
+    }
 }
 
 //MARK: - Setup Constraints
