@@ -46,6 +46,8 @@
 		56E06ED428439AB40073ADA7 /* UIColor + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E06ED328439AB40073ADA7 /* UIColor + Extension.swift */; };
 		56E06ED628439D6D0073ADA7 /* Label + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E06ED528439D6D0073ADA7 /* Label + Extension.swift */; };
 		56E06ED828439E420073ADA7 /* UIImageView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E06ED728439E420073ADA7 /* UIImageView + Extension.swift */; };
+		56E18EF72864D8F6004869E9 /* Validators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E18EF62864D8F6004869E9 /* Validators.swift */; };
+		56E18EF92864DAB6004869E9 /* AuthError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E18EF82864DAB6004869E9 /* AuthError.swift */; };
 		A4498247B0CD3019512AAB65 /* Pods_iChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E18CB987D8BCFCF22F793D4 /* Pods_iChat.framework */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +94,8 @@
 		56E06ED328439AB40073ADA7 /* UIColor + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
 		56E06ED528439D6D0073ADA7 /* Label + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Label + Extension.swift"; sourceTree = "<group>"; };
 		56E06ED728439E420073ADA7 /* UIImageView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + Extension.swift"; sourceTree = "<group>"; };
+		56E18EF62864D8F6004869E9 /* Validators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validators.swift; sourceTree = "<group>"; };
+		56E18EF82864DAB6004869E9 /* AuthError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthError.swift; sourceTree = "<group>"; };
 		BF98103B4103819CDA1C21FB /* Pods-iChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iChat.release.xcconfig"; path = "Target Support Files/Pods-iChat/Pods-iChat.release.xcconfig"; sourceTree = "<group>"; };
 		D6B2C7D21117B142540EA214 /* Pods-iChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iChat.debug.xcconfig"; path = "Target Support Files/Pods-iChat/Pods-iChat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -199,6 +203,7 @@
 				5671DF58285B876B00C68605 /* Services */,
 				56973DFA284A65E60098769D /* Controllers */,
 				56973DF9284A65C80098769D /* Signin&Auth */,
+				56E18EFA2864DCAF004869E9 /* Helpers */,
 				561759A5285261BD00DFA113 /* Protocols */,
 				565B7B63284526610028AFAE /* Extensions */,
 				560161B2284CAEDE00079B40 /* activeChats.json */,
@@ -252,6 +257,15 @@
 				561759A6285265B700DFA113 /* SectionHeader.swift */,
 			);
 			path = Header;
+			sourceTree = "<group>";
+		};
+		56E18EFA2864DCAF004869E9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				56E18EF82864DAB6004869E9 /* AuthError.swift */,
+				56E18EF62864D8F6004869E9 /* Validators.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		E9AB65E5D8A5FDB438767CF2 /* Frameworks */ = {
@@ -406,6 +420,7 @@
 				561759A2285260F200DFA113 /* WaitingChatCell.swift in Sources */,
 				5664801428434AE400121057 /* AppDelegate.swift in Sources */,
 				56E06ECD28438B860073ADA7 /* UIButoon + Extension.swift in Sources */,
+				56E18EF72864D8F6004869E9 /* Validators.swift in Sources */,
 				561759AA2853BD7C00DFA113 /* MChat.swift in Sources */,
 				5671DF5A285B879300C68605 /* AuthService.swift in Sources */,
 				56973DF8284A64A70098769D /* ListViewController.swift in Sources */,
@@ -413,6 +428,7 @@
 				56E06ED428439AB40073ADA7 /* UIColor + Extension.swift in Sources */,
 				56973DFC284A66080098769D /* MainTabBarController.swift in Sources */,
 				560161B6284CAF0E00079B40 /* Bundle-Decodable.swift in Sources */,
+				56E18EF92864DAB6004869E9 /* AuthError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
