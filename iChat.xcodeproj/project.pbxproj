@@ -37,10 +37,13 @@
 		56973DF8284A64A70098769D /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56973DF7284A64A70098769D /* ListViewController.swift */; };
 		56973DFC284A66080098769D /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56973DFB284A66080098769D /* MainTabBarController.swift */; };
 		56973DFE284A66580098769D /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56973DFD284A66580098769D /* PeopleViewController.swift */; };
+		56A4BACC286705FC0000B20B /* AuthNavigatingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A4BACB286705FC0000B20B /* AuthNavigatingDelegate.swift */; };
+		56A4BACE28670A480000B20B /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A4BACD28670A480000B20B /* FirestoreService.swift */; };
 		56BEFA4E28549F1000CE95F2 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 56BEFA4D28549F1000CE95F2 /* users.json */; };
 		56BEFA512854A02E00CE95F2 /* MUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BEFA502854A02E00CE95F2 /* MUser.swift */; };
 		56BEFA532854B6A700CE95F2 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BEFA522854B6A700CE95F2 /* UserCell.swift */; };
 		56BEFA552854B84300CE95F2 /* UIViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BEFA542854B84300CE95F2 /* UIViewController + Extension.swift */; };
+		56DBE1FB28684D3400E9771B /* UserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DBE1FA28684D3400E9771B /* UserError.swift */; };
 		56E06ECD28438B860073ADA7 /* UIButoon + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E06ECC28438B860073ADA7 /* UIButoon + Extension.swift */; };
 		56E06ED2284399E50073ADA7 /* UIFont + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E06ED1284399E50073ADA7 /* UIFont + Extension.swift */; };
 		56E06ED428439AB40073ADA7 /* UIColor + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E06ED328439AB40073ADA7 /* UIColor + Extension.swift */; };
@@ -85,10 +88,13 @@
 		56973DF7284A64A70098769D /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		56973DFB284A66080098769D /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		56973DFD284A66580098769D /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
+		56A4BACB286705FC0000B20B /* AuthNavigatingDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNavigatingDelegate.swift; sourceTree = "<group>"; };
+		56A4BACD28670A480000B20B /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreService.swift; sourceTree = "<group>"; };
 		56BEFA4D28549F1000CE95F2 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
 		56BEFA502854A02E00CE95F2 /* MUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUser.swift; sourceTree = "<group>"; };
 		56BEFA522854B6A700CE95F2 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		56BEFA542854B84300CE95F2 /* UIViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extension.swift"; sourceTree = "<group>"; };
+		56DBE1FA28684D3400E9771B /* UserError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserError.swift; sourceTree = "<group>"; };
 		56E06ECC28438B860073ADA7 /* UIButoon + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButoon + Extension.swift"; sourceTree = "<group>"; };
 		56E06ED1284399E50073ADA7 /* UIFont + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont + Extension.swift"; sourceTree = "<group>"; };
 		56E06ED328439AB40073ADA7 /* UIColor + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
@@ -135,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				561759A3285261B100DFA113 /* SelfConfiguringCell.swift */,
+				56A4BACB286705FC0000B20B /* AuthNavigatingDelegate.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -222,6 +229,7 @@
 			children = (
 				561759A82853BD6F00DFA113 /* Models */,
 				5671DF59285B879300C68605 /* AuthService.swift */,
+				56A4BACD28670A480000B20B /* FirestoreService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -263,6 +271,7 @@
 			isa = PBXGroup;
 			children = (
 				56E18EF82864DAB6004869E9 /* AuthError.swift */,
+				56DBE1FA28684D3400E9771B /* UserError.swift */,
 				56E18EF62864D8F6004869E9 /* Validators.swift */,
 			);
 			path = Helpers;
@@ -395,13 +404,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				56276B442847E94600788773 /* SegmentedControl + Extension.swift in Sources */,
+				56A4BACE28670A480000B20B /* FirestoreService.swift in Sources */,
 				56276B3E2845F13900788773 /* LoginViewController.swift in Sources */,
+				56DBE1FB28684D3400E9771B /* UserError.swift in Sources */,
 				5657C25C285B387100DD0A6C /* ChatRequestViewController.swift in Sources */,
 				56276B3828452BDA00788773 /* StackView + Extension.swift in Sources */,
 				5617599E2852465B00DFA113 /* ActiveChatCell.swift in Sources */,
 				5657C258285B206600DD0A6C /* InsertableTextField.swift in Sources */,
 				56E06ED628439D6D0073ADA7 /* Label + Extension.swift in Sources */,
 				56BEFA532854B6A700CE95F2 /* UserCell.swift in Sources */,
+				56A4BACC286705FC0000B20B /* AuthNavigatingDelegate.swift in Sources */,
 				56E06ED2284399E50073ADA7 /* UIFont + Extension.swift in Sources */,
 				56BEFA512854A02E00CE95F2 /* MUser.swift in Sources */,
 				56973DFE284A66580098769D /* PeopleViewController.swift in Sources */,

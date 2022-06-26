@@ -8,7 +8,6 @@
 import UIKit
 import Firebase
 import FirebaseAuth
-import SwiftUI
 
 class AuthService {
     
@@ -58,5 +57,4 @@ class AuthService {
             completion(.success(result.user))
         }
     }
-    
 }

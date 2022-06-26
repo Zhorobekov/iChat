@@ -8,5 +8,6 @@ target 'iChat' do
   # Pods for iChat
   pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
 
 end

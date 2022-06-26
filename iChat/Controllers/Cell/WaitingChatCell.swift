@@ -11,7 +11,7 @@ class WaitingChatCell: UICollectionViewCell, SelfConfigureCell {
     
     static var reuseId: String = "WaitingChatCell"
     
-    let friendImageView = UIImageView()
+    private let friendImageView = UIImageView()
         
     override init(frame: CGRect) {
         super.init(frame: frame)

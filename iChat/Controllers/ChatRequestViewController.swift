@@ -9,13 +9,13 @@ import UIKit
 
 class ChatRequestViewController: UIViewController {
     
-    let containerView = UIView()
-    let imageView = UIImageView(image: #imageLiteral(resourceName: "human6"), contentMode: .scaleAspectFill)
-    let nameLabel = UILabel(text: "Misha Slayer", font: .systemFont(ofSize: 20, weight: .light))
-    let aboutMeLabel = UILabel(text: "You have the opportunity to start a new chat", font: .systemFont(ofSize: 16, weight: .light))
+    private let containerView = UIView()
+    private let imageView = UIImageView(image: #imageLiteral(resourceName: "human6"), contentMode: .scaleAspectFill)
+    private let nameLabel = UILabel(text: "Misha Slayer", font: .systemFont(ofSize: 20, weight: .light))
+    private let aboutMeLabel = UILabel(text: "You have the opportunity to start a new chat", font: .systemFont(ofSize: 16, weight: .light))
     
-    let acceptButton = UIButton(title: "ACCEPT", titleColor: .white, isShadow: false, font: .laoSangamMN20(), backgroundColor: .black, cornerRadius: 10)
-    let denyButton = UIButton(title: "Deny", titleColor: #colorLiteral(red: 0.9101527929, green: 0.07433142513, blue: 0.1546721458, alpha: 1), isShadow: false, font: .laoSangamMN20(), backgroundColor: .mainWhite(), cornerRadius: 10)
+    private let acceptButton = UIButton(title: "ACCEPT", titleColor: .white, isShadow: false, font: .laoSangamMN20(), backgroundColor: .black, cornerRadius: 10)
+    private let denyButton = UIButton(title: "Deny", titleColor: #colorLiteral(red: 0.9101527929, green: 0.07433142513, blue: 0.1546721458, alpha: 1), isShadow: false, font: .laoSangamMN20(), backgroundColor: .mainWhite(), cornerRadius: 10)
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -9,8 +9,8 @@ import UIKit
 
 class ListViewController: UIViewController {
     
-    let activeChats = Bundle.main.decode([MChat].self, from: "activeChats.json")
-    let waitingChats = Bundle.main.decode([MChat].self, from: "waitingChats.json")
+    private let activeChats = Bundle.main.decode([MChat].self, from: "activeChats.json")
+    private let waitingChats = Bundle.main.decode([MChat].self, from: "waitingChats.json")
     
     enum Section: Int, CaseIterable {
         case waitingChats
@@ -26,8 +26,8 @@ class ListViewController: UIViewController {
         }
     }
     
-    var dataSource: UICollectionViewDiffableDataSource<Section, MChat>?
-    var collectionView: UICollectionView!
+    private var dataSource: UICollectionViewDiffableDataSource<Section, MChat>?
+    private var collectionView: UICollectionView!
     
     
     override func viewDidLoad() {

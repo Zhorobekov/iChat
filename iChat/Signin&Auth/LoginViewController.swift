@@ -7,36 +7,31 @@
 
 import UIKit
 
-protocol AuthNavigatingDelegate: AnyObject {
-    func toLoginViewController()
-    func toSignUpViewController()
-}
-
 class LoginViewController: UIViewController {
     
-    let welcomeLabel = UILabel(text: "Welcome back", font: .avenir26())
+    private let welcomeLabel = UILabel(text: "Welcome back", font: .avenir26())
     
-    let loginWithLabel = UILabel(text: "Login with")
-    let orLabel = UILabel(text: "or")
-    let emailLabel = UILabel(text: "Email")
-    let passwordLabel = UILabel(text: "Password")
-    let needAnAccountLabel = UILabel(text: "Need an account?")
+    private let loginWithLabel = UILabel(text: "Login with")
+    private let orLabel = UILabel(text: "or")
+    private let emailLabel = UILabel(text: "Email")
+    private let passwordLabel = UILabel(text: "Password")
+    private let needAnAccountLabel = UILabel(text: "Need an account?")
     
-    let googleButton = UIButton(title: "Google",
+    private let googleButton = UIButton(title: "Google",
                                 titleColor: .black,
                                 isShadow: true,
                                 backgroundColor: .white)
     
-    let emailTextField = OneLineTextField(font: .avenir20())
-    let passwordTextField = OneLineTextField(font: .avenir20())
+    private let emailTextField = OneLineTextField(font: .avenir20())
+    private let passwordTextField = OneLineTextField(font: .avenir20())
     
-    let loginButton = UIButton(title: "Login",
+    private let loginButton = UIButton(title: "Login",
                                 titleColor: .white,
                                 isShadow: true,
                                 backgroundColor: .buttonDark(),
                                 cornerRadius: 4)
     
-    let signUpButton: UIButton = {
+    private let signUpButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Sign Up", for: .normal)
         button.titleLabel?.font = .avenir20()
@@ -64,7 +59,7 @@ class LoginViewController: UIViewController {
             switch result {
             case .success(let user):
                 self.showAlert(with: "Успешно", and: "Вы авторизованы") {
-                    self.present(SetupProfileViewController(), animated: true, completion: nil)
+                    self.present(SetupProfileViewController(currentUser: user), animated: true, completion: nil)
                 }
                 
             case .failure(let error):

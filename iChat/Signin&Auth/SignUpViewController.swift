@@ -9,20 +9,20 @@ import UIKit
 
 class  SignUpViewController: UIViewController {
     
-    let welcomeLabel = UILabel(text: "Good to see you", font: .avenir26())
+    private let welcomeLabel = UILabel(text: "Good to see you", font: .avenir26())
     
-    let emailLabel = UILabel(text: "Email")
-    let passwordLabel = UILabel(text: "Password")
-    let confirmLabel = UILabel(text: "Confirm password")
-    let alreadyOnBoardLabel = UILabel(text: "Already on board?")
+    private let emailLabel = UILabel(text: "Email")
+    private let passwordLabel = UILabel(text: "Password")
+    private let confirmLabel = UILabel(text: "Confirm password")
+    private let alreadyOnBoardLabel = UILabel(text: "Already on board?")
     
-    let emailTextField = OneLineTextField(font: .avenir20())
-    let passwordTextField = OneLineTextField(font: .avenir20())
-    let confirmPasswordTextField = OneLineTextField(font: .avenir20())
+    private let emailTextField = OneLineTextField(font: .avenir20())
+    private let passwordTextField = OneLineTextField(font: .avenir20())
+    private let confirmPasswordTextField = OneLineTextField(font: .avenir20())
     
-    let signUpButton = UIButton(title: "Sign up", titleColor: .white, backgroundColor: .buttonDark(), cornerRadius: 4)
+    private let signUpButton = UIButton(title: "Sign up", titleColor: .white, backgroundColor: .buttonDark(), cornerRadius: 4)
     
-    let loginButton: UIButton = {
+    private let loginButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Login", for: .normal)
         button.titleLabel?.font = .avenir20()
@@ -56,7 +56,7 @@ class  SignUpViewController: UIViewController {
                 
             case .success(let user):
                 self.showAlert(with: "Успешно", and: "Вы зарегистрированы") {
-                    self.present(SetupProfileViewController(), animated: true, completion: nil)
+                    self.present(SetupProfileViewController(currentUser: user), animated: true, completion: nil)
                 }
                 
             case .failure(let error):

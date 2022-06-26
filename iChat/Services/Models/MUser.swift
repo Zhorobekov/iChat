@@ -9,9 +9,22 @@ import Foundation
 
 
 struct MUser: Hashable, Decodable {
+    var id: String
+    var email: String
     var username: String
-    var avatarStringURL: String 
-    var id: Int
+    var avatarStringURL: String
+    var description: String
+    var sex: String
+    
+    var representation: [String : Any] {
+        var rep = ["uid" : id]
+        rep["email"] = email
+        rep["username"] = username
+        rep["avatarStringURL"] = avatarStringURL
+        rep["description"] = description
+        rep["sex"] = sex
+        return rep
+    }
     
     func hash(into hasher: inout Hasher) {
         hasher.combine(id)
@@ -26,6 +39,5 @@ struct MUser: Hashable, Decodable {
         if filter.isEmpty { return true }
         let lowercasedFilter = filter.lowercased()
         return username.lowercased().contains(lowercasedFilter)
-
     }
 }

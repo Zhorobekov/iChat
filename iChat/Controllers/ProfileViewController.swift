@@ -9,11 +9,11 @@ import UIKit
 
 class ProfileViewController: UIViewController {
     
-    let containerView = UIView()
-    let imageView = UIImageView(image: #imageLiteral(resourceName: "human6"), contentMode: .scaleAspectFill)
-    let nameLabel = UILabel(text: "Misha Slayer", font: .systemFont(ofSize: 20, weight: .light))
-    let aboutMeLabel = UILabel(text: "You have the opportunity to chat with the best woman in the world", font: .systemFont(ofSize: 16, weight: .light))
-    let myTextField = InsertableTextField()
+    private let containerView = UIView()
+    private let imageView = UIImageView(image: #imageLiteral(resourceName: "human6"), contentMode: .scaleAspectFill)
+    private let nameLabel = UILabel(text: "Misha Slayer", font: .systemFont(ofSize: 20, weight: .light))
+    private let aboutMeLabel = UILabel(text: "You have the opportunity to chat with the best woman in the world", font: .systemFont(ofSize: 16, weight: .light))
+    private let myTextField = InsertableTextField()
     
     override func viewDidLoad() {
         super.viewDidLoad()
