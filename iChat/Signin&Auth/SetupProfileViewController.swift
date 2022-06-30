@@ -55,8 +55,9 @@ class SetupProfileViewController: UIViewController {
             sex: genderSegmentedControl.titleForSegment(at: genderSegmentedControl.selectedSegmentIndex)) { result in
                 switch result {
                 case .success(let muser):
-                    self.showAlert(with: "Успешно", and: "Приятного общения")
-                    print(muser)
+                    self.showAlert(with: "Успешно", and: "Приятного общения") {
+                        self.present(MainTabBarController(), animated: true, completion: nil)
+                    }
                 case .failure(let error):
                     self.showAlert(with: "Ошибка", and: error.localizedDescription)
                 }

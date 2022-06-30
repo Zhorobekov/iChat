@@ -2,51 +2,81 @@
     {
         "username": "Bob River",
         "avatarStringURL": "human1",
-        "id": 1
+        "id": 1,
+        "email": "test1@email.ru",
+        "description": "asd",
+        "sex": "male"
     },
     {
         "username": "John Black",
         "avatarStringURL": "human2",
-        "id": 2
+        "id": 2,
+        "email": "test1@email.ru",
+        "description": "asd",
+        "sex": "male"
     },
     {
         "username": "Misha Red",
         "avatarStringURL": "human3",
-        "id": 3
+        "id": 3,
+        "email": "test1@email.ru",
+        "description": "asd",
+        "sex": "male"
     },
     {
         "username": "Alex Film",
         "avatarStringURL": "human4",
-        "id": 4
+        "id": 4,
+        "email": "test1@email.ru",
+        "description": "asd",
+        "sex": "male"
     },
     {
         "username": "Robert Martin",
         "avatarStringURL": "human5",
-        "id": 5
+        "id": 5,
+        "email": "test1@email.ru",
+        "description": "asd",
+        "sex": "male"
     },
     {
         "username": "Peter Brown",
         "avatarStringURL": "human6",
-        "id": 6
+        "id": 6,
+        "email": "test1@email.ru",
+        "description": "asd",
+        "sex": "male"
     },
     {
         "username": "Sarah White",
         "avatarStringURL": "human7",
-        "id": 7
+        "id": 7,
+        "email": "test1@email.ru",
+        "description": "asd",
+        "sex": "male"
     },
     {
         "username": "Melven Strong",
         "avatarStringURL": "human8",
-        "id": 8
+        "id": 8,
+        "email": "test1@email.ru",
+        "description": "asd",
+        "sex": "male"
     },
     {
         "username": "Nike Rose",
         "avatarStringURL": "human9",
-        "id": 9
+        "id": 9,
+        "email": "test1@email.ru",
+        "description": "asd",
+        "sex": "male"
     },
     {
         "username": "Andrey Velvet",
         "avatarStringURL": "human10",
-        "id": 10
+        "id": 10,
+        "email": "test1@email.ru",
+        "description": "asd",
+        "sex": "male"
     }
 ]

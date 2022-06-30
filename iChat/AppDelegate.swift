@@ -7,6 +7,7 @@
 
 import UIKit
 import Firebase
+import FirebaseAuth
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,13 +16,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+        FirebaseApp.configure()
+        
         let window = UIWindow()
         window.rootViewController = AuthViewController()
+       
+        if let user = Auth.auth().currentUser {
+            FirestoreService.shared.getUserData(user: user) { result in
+                switch result {
+                case .success(let muser):
+                    window.rootViewController = MainTabBarController()
+                case .failure(let error):
+                    window.rootViewController = AuthViewController()
+                }
+            }
+        } else {
+            window.rootViewController = AuthViewController()
+        }
+        
         window.makeKeyAndVisible()
         
         self.window = window
         
-        FirebaseApp.configure()
+     
         
         return true
     }
