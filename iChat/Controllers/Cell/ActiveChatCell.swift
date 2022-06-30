@@ -93,7 +93,12 @@ struct ActiveChatCellProvider: PreviewProvider {
     
     struct ContainerView: UIViewControllerRepresentable {
         
-        let mainTabBarViewController = ListViewController()
+        let mainTabBarViewController = ListViewController(currentUser: MUser(id: "123",
+                                                                             email: "123",
+                                                                             username: "123",
+                                                                             avatarStringURL: "123",
+                                                                             description: "123",
+                                                                             sex: "123"))
         
         func makeUIViewController(context: Context) -> some UIViewController {
             return mainTabBarViewController

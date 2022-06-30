@@ -25,7 +25,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             FirestoreService.shared.getUserData(user: user) { result in
                 switch result {
                 case .success(let muser):
-                    window.rootViewController = MainTabBarController()
+                    let mainTabBar = MainTabBarController(currentUser: muser)
+                    mainTabBar.modalPresentationStyle = .fullScreen
+                    window.rootViewController = mainTabBar
                 case .failure(let error):
                     window.rootViewController = AuthViewController()
                 }
