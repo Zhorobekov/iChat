@@ -6,9 +6,12 @@
 //
 
 import UIKit
+import GoogleSignIn
+import FirebaseCore
+import FirebaseAuth
 
 class AuthViewController: UIViewController {
-
+    
     private let logoImageView = UIImageView(image: #imageLiteral(resourceName: "Logo"), contentMode: .scaleAspectFit)
     
     private let googleLabel = UILabel(text: "Get started with")
@@ -17,18 +20,23 @@ class AuthViewController: UIViewController {
     
     
     private let emailButton = UIButton(title: "Email",
-                               titleColor: .white,
-                               backgroundColor: .buttonDark())
+                                       titleColor: .white,
+                                       backgroundColor: .buttonDark())
     
     private let loginButton = UIButton(title: "Login",
-                               titleColor: .buttonRed(),
-                               isShadow: true,
-                               backgroundColor: .white)
+                                       titleColor: .buttonRed(),
+                                       isShadow: true,
+                                       backgroundColor: .white)
     
-    private let googleButton = UIButton(title: "Google",
-                                titleColor: .black,
-                                isShadow: true,
-                                backgroundColor: .white)
+//    private let googleButton = UIButton(title: "Google",
+//                                        titleColor: .black,
+//                                        isShadow: true,
+//                                        backgroundColor: .white)
+    
+    private let googleButton: GIDSignInButton = {
+       let button = GIDSignInButton()
+        return button
+    }()
     
     private let signUpViewController = SignUpViewController()
     private let loginViewController = LoginViewController()
@@ -39,13 +47,13 @@ class AuthViewController: UIViewController {
         view.backgroundColor = .white
         setupConstrains()
         
-        googleButton.customizeGoogleButton()
+//        googleButton.customizeGoogleButton()
         
         emailButton.addTarget(self, action: #selector(emailButtonTapped), for: .touchUpInside)
         loginButton.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
         
         signUpViewController.delegate = self
-        loginViewController.delegate = self 
+        loginViewController.delegate = self
     }
     
     @objc private func emailButtonTapped() {
@@ -58,6 +66,10 @@ class AuthViewController: UIViewController {
         present(loginViewController, animated: true, completion: nil)
     }
 }
+
+//extension AuthViewController {
+//    AuthService.shared.googleLogin(user: <#T##GIDGoogleUser#>, error: <#T##Error#>, completion: <#T##(Result<User, Error>) -> Void#>)
+//}
 
 //MARK: - AuthNavigatingDelegate
 extension AuthViewController: AuthNavigatingDelegate {
@@ -82,7 +94,7 @@ extension AuthViewController {
         
         let stackView = UIStackView(arrangedSubviews: [googleView, emailView, loginView], axis: .vertical, spacing: 40)
         stackView.translatesAutoresizingMaskIntoConstraints = false
-
+        
         view.addSubview(logoImageView)
         view.addSubview(stackView)
         
@@ -118,7 +130,7 @@ struct AuthViewControllerProvider: PreviewProvider {
         }
         
         func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
-
+            
         }
     }
 }
