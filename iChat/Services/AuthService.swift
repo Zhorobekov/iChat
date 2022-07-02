@@ -27,7 +27,7 @@ class AuthService {
                 completion(.failure(error!))
                 return
             }
-            
+    
             completion(.success(result.user))
         }
     }

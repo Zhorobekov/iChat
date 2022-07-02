@@ -77,25 +77,7 @@ class AuthViewController: UIViewController {
     }
 }
 
-extension AuthViewController {
-    
-    func googleSignIn(user: User) {
-        FirestoreService.shared.getUserData(user: user) { result in
-            switch result {
-            case .success(let muser):
-                let mainTabBar = MainTabBarController(currentUser: muser)
-                mainTabBar.modalPresentationStyle = .fullScreen
-                self.showAlert(with: "Успешно", and: "Авторизованы") {
-                    self.present(mainTabBar, animated: true, completion: nil)
-                }
-            case .failure(_):
-                self.showAlert(with: "Успешно", and: "Вы зарегистрированы") {
-                    self.present(SetupProfileViewController(currentUser: user), animated: true, completion: nil)
-                }
-            }
-        }
-    }
-}
+
 
 //MARK: - AuthNavigatingDelegate
 extension AuthViewController: AuthNavigatingDelegate {

@@ -51,6 +51,7 @@ class LoginViewController: UIViewController {
         
         signUpButton.addTarget(self, action: #selector(signUpButtonTapped), for: .touchUpInside)
         loginButton.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
+        googleButton.addTarget(self, action: #selector(googleButtonTapped), for: .touchUpInside)
     }
     
     @objc private func loginButtonTapped() {
@@ -69,7 +70,6 @@ class LoginViewController: UIViewController {
                             self.present(SetupProfileViewController(currentUser: user), animated: true, completion: nil)
                         }
                     }
-                    
                 }
                 
             case .failure(let error):
@@ -78,22 +78,16 @@ class LoginViewController: UIViewController {
         }
     }
     
-//    @objc private func googleButtonTapped() {
-//            FirestoreService.shared.getUserData(user: user) { result in
-//                switch result {
-//                case .success(let muser):
-//                    let mainTabBar = MainTabBarController(currentUser: muser)
-//                    mainTabBar.modalPresentationStyle = .fullScreen
-//                    self.showAlert(with: "Успешно", and: "Авторизованы") {
-//                        self.present(mainTabBar, animated: true, completion: nil)
-//                    }
-//                case .failure(_):
-//                    self.showAlert(with: "Успешно", and: "Вы зарегистрированы") {
-//                        self.present(SetupProfileViewController(currentUser: user), animated: true, completion: nil)
-//                    }
-//                }
-//            }
-//    }
+    @objc private func googleButtonTapped() {
+        AuthService.shared.googleLogin(present: self) { result in
+            switch result {
+            case .success(let user):
+                self.googleSignIn(user: user)
+            case .failure(let error):
+                self.showAlert(with: "Ошибка", and: error.localizedDescription)
+            }
+        }
+    }
     
     @objc private func signUpButtonTapped() {
         dismiss(animated: true) {
