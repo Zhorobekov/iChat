@@ -7,6 +7,7 @@
 
 import UIKit
 import FirebaseAuth
+import Kingfisher
 
 class SetupProfileViewController: UIViewController {
     
@@ -35,7 +36,10 @@ class SetupProfileViewController: UIViewController {
             fullNameTextField.text = username
         }
         
-        //to do set google image
+        if let photoUrl = currentUser.photoURL {
+            fullImageView.circleImageView.kf.setImage(with: photoUrl)
+        }
+        
     }
     
     required init?(coder: NSCoder) {

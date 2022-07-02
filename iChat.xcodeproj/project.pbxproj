@@ -34,6 +34,7 @@
 		5664802028434AE600121057 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5664801E28434AE600121057 /* LaunchScreen.storyboard */; };
 		5671DF57285B779E00C68605 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5671DF56285B779E00C68605 /* GoogleService-Info.plist */; };
 		5671DF5A285B879300C68605 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5671DF59285B879300C68605 /* AuthService.swift */; };
+		56728DD228705CCC00414FF9 /* ListenerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56728DD128705CCC00414FF9 /* ListenerService.swift */; };
 		56973DF8284A64A70098769D /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56973DF7284A64A70098769D /* ListViewController.swift */; };
 		56973DFC284A66080098769D /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56973DFB284A66080098769D /* MainTabBarController.swift */; };
 		56973DFE284A66580098769D /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56973DFD284A66580098769D /* PeopleViewController.swift */; };
@@ -87,6 +88,7 @@
 		5664802128434AE600121057 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5671DF56285B779E00C68605 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5671DF59285B879300C68605 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		56728DD128705CCC00414FF9 /* ListenerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenerService.swift; sourceTree = "<group>"; };
 		56973DF7284A64A70098769D /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		56973DFB284A66080098769D /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		56973DFD284A66580098769D /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
@@ -239,6 +241,7 @@
 				5671DF59285B879300C68605 /* AuthService.swift */,
 				56A4BACD28670A480000B20B /* FirestoreService.swift */,
 				56EC30E328704A8700384A6A /* StorageService.swift */,
+				56728DD128705CCC00414FF9 /* ListenerService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -417,6 +420,7 @@
 				56276B3E2845F13900788773 /* LoginViewController.swift in Sources */,
 				56DBE1FB28684D3400E9771B /* UserError.swift in Sources */,
 				5657C25C285B387100DD0A6C /* ChatRequestViewController.swift in Sources */,
+				56728DD228705CCC00414FF9 /* ListenerService.swift in Sources */,
 				56276B3828452BDA00788773 /* StackView + Extension.swift in Sources */,
 				5617599E2852465B00DFA113 /* ActiveChatCell.swift in Sources */,
 				5657C258285B206600DD0A6C /* InsertableTextField.swift in Sources */,
