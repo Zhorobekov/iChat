@@ -6,7 +6,6 @@
 //
 
 import Firebase
-import FirebaseFirestore
 
 class FirestoreService {
     

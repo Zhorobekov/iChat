@@ -65,7 +65,7 @@ class LoginViewController: UIViewController {
                             let mainTabBar = MainTabBarController(currentUser: muser)
                             mainTabBar.modalPresentationStyle = .fullScreen
                             self.present(mainTabBar, animated: true, completion: nil)
-                        case .failure(let error):
+                        case .failure(_):
                             self.present(SetupProfileViewController(currentUser: user), animated: true, completion: nil)
                         }
                     }
@@ -77,6 +77,23 @@ class LoginViewController: UIViewController {
             }
         }
     }
+    
+//    @objc private func googleButtonTapped() {
+//            FirestoreService.shared.getUserData(user: user) { result in
+//                switch result {
+//                case .success(let muser):
+//                    let mainTabBar = MainTabBarController(currentUser: muser)
+//                    mainTabBar.modalPresentationStyle = .fullScreen
+//                    self.showAlert(with: "Успешно", and: "Авторизованы") {
+//                        self.present(mainTabBar, animated: true, completion: nil)
+//                    }
+//                case .failure(_):
+//                    self.showAlert(with: "Успешно", and: "Вы зарегистрированы") {
+//                        self.present(SetupProfileViewController(currentUser: user), animated: true, completion: nil)
+//                    }
+//                }
+//            }
+//    }
     
     @objc private func signUpButtonTapped() {
         dismiss(animated: true) {

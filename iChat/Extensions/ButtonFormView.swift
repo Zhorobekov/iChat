@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import GoogleSignIn
 
 class ButtonFromView: UIView {
     
@@ -32,7 +33,6 @@ class ButtonFromView: UIView {
         ])
         
         bottomAnchor.constraint(equalTo: button.bottomAnchor).isActive = true
-       
     }
     
     required init?(coder: NSCoder) {

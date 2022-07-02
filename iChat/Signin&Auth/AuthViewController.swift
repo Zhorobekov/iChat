@@ -28,51 +28,78 @@ class AuthViewController: UIViewController {
                                        isShadow: true,
                                        backgroundColor: .white)
     
-//    private let googleButton = UIButton(title: "Google",
-//                                        titleColor: .black,
-//                                        isShadow: true,
-//                                        backgroundColor: .white)
-    
-    private let googleButton: GIDSignInButton = {
-       let button = GIDSignInButton()
+    private let googleButton = UIButton(title: "Google",
+                                        titleColor: .black,
+                                        isShadow: true,
+                                        backgroundColor: .white)
+   
+    private let secondGoogleButton: GIDSignInButton = {
+        let button = GIDSignInButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
     
     private let signUpViewController = SignUpViewController()
     private let loginViewController = LoginViewController()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         setupConstrains()
         
-//        googleButton.customizeGoogleButton()
+        googleButton.customizeGoogleButton()
         
         emailButton.addTarget(self, action: #selector(emailButtonTapped), for: .touchUpInside)
         loginButton.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
+        googleButton.addTarget(self, action: #selector(googleButtonTapped), for: .touchUpInside)
         
         signUpViewController.delegate = self
         loginViewController.delegate = self
     }
     
     @objc private func emailButtonTapped() {
-        print(#function)
         present(signUpViewController, animated: true, completion: nil)
     }
     
     @objc private func loginButtonTapped() {
-        print(#function)
         present(loginViewController, animated: true, completion: nil)
+    }
+    
+    @objc private func googleButtonTapped() {
+        AuthService.shared.googleLogin(present: self) { result in
+            switch result {
+            case .success(let user):
+                self.googleSignIn(user: user)
+            case .failure(let error):
+                self.showAlert(with: "Ошибка", and: error.localizedDescription)
+            }
+        }
     }
 }
 
-//extension AuthViewController {
-//    AuthService.shared.googleLogin(user: <#T##GIDGoogleUser#>, error: <#T##Error#>, completion: <#T##(Result<User, Error>) -> Void#>)
-//}
+extension AuthViewController {
+    
+    func googleSignIn(user: User) {
+        FirestoreService.shared.getUserData(user: user) { result in
+            switch result {
+            case .success(let muser):
+                let mainTabBar = MainTabBarController(currentUser: muser)
+                mainTabBar.modalPresentationStyle = .fullScreen
+                self.showAlert(with: "Успешно", and: "Авторизованы") {
+                    self.present(mainTabBar, animated: true, completion: nil)
+                }
+            case .failure(_):
+                self.showAlert(with: "Успешно", and: "Вы зарегистрированы") {
+                    self.present(SetupProfileViewController(currentUser: user), animated: true, completion: nil)
+                }
+            }
+        }
+    }
+}
 
 //MARK: - AuthNavigatingDelegate
 extension AuthViewController: AuthNavigatingDelegate {
+   
     func toLoginViewController() {
         present(loginViewController, animated: true, completion: nil)
     }
@@ -84,6 +111,7 @@ extension AuthViewController: AuthNavigatingDelegate {
 
 //MARK: - Setup Constraints
 extension AuthViewController {
+  
     private func setupConstrains() {
         
         logoImageView.translatesAutoresizingMaskIntoConstraints = false

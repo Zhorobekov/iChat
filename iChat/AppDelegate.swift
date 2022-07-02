@@ -12,6 +12,7 @@ import GoogleSignIn
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
 
     var window: UIWindow?
 
@@ -29,7 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     let mainTabBar = MainTabBarController(currentUser: muser)
                     mainTabBar.modalPresentationStyle = .fullScreen
                     window.rootViewController = mainTabBar
-                case .failure(let error):
+                case .failure(_):
                     window.rootViewController = AuthViewController()
                 }
             }

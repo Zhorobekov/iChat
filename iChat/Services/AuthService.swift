@@ -21,13 +21,13 @@ class AuthService {
             completion(.failure(AuthError.notFiled))
             return
         }
-
+        
         auth.signIn(withEmail: email, password: password) { result, error in
             guard let result = result else {
                 completion(.failure(error!))
                 return
             }
-    
+            
             completion(.success(result.user))
         }
     }
@@ -46,6 +46,31 @@ class AuthService {
                 return
             }
             completion(.success(result.user))
+        }
+    }
+    
+    
+    func googleLogin(present: UIViewController, completion: @escaping (Result<User, Error>) -> Void) {
+        guard let clientID = FirebaseApp.app()?.options.clientID else { return }
+        
+        let config = GIDConfiguration(clientID: clientID)
+        
+        GIDSignIn.sharedInstance.signIn(with: config, presenting: present) { user, error in
+            
+            if let error = error {
+                completion(.failure(error))
+            }
+            
+            guard let auth = user?.authentication else { return }
+            let credential =  GoogleAuthProvider.credential(withIDToken: auth.idToken!, accessToken: auth.accessToken)
+            
+            Auth.auth().signIn(with: credential) { result, error in
+                guard let result = result else {
+                    completion(.failure(error!))
+                    return
+                }
+                completion(.success(result.user))
+            }
         }
     }
     
