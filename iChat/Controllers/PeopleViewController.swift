@@ -86,6 +86,8 @@ class PeopleViewController: UIViewController {
         collectionView.register(SectionHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: SectionHeader.reuseId)
         
         collectionView.register(UserCell.self, forCellWithReuseIdentifier: UserCell.reuseId)
+        
+        collectionView.delegate = self
     }
     
     private func setupSearchBar() {
@@ -137,6 +139,8 @@ extension PeopleViewController {
     }
 }
 
+
+//MARK: - Composition Layout
 extension PeopleViewController {
     private func createCompositionLayout() -> UICollectionViewLayout {
         
@@ -192,6 +196,15 @@ extension PeopleViewController {
 extension PeopleViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         reloadData(with: searchText)
+    }
+}
+
+//MARK: - CollectionViewDelegate
+extension PeopleViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let user = self.dataSource.itemIdentifier(for: indexPath) else { return }
+        let profileViewController = ProfileViewController(user: user)
+        present(profileViewController, animated: true, completion: nil)
     }
 }
 

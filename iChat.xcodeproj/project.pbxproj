@@ -35,6 +35,8 @@
 		5671DF57285B779E00C68605 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5671DF56285B779E00C68605 /* GoogleService-Info.plist */; };
 		5671DF5A285B879300C68605 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5671DF59285B879300C68605 /* AuthService.swift */; };
 		56728DD228705CCC00414FF9 /* ListenerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56728DD128705CCC00414FF9 /* ListenerService.swift */; };
+		56728DD4287067C100414FF9 /* UIApplication + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56728DD3287067C100414FF9 /* UIApplication + Extension.swift */; };
+		56728DD628706EA300414FF9 /* MMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56728DD528706EA300414FF9 /* MMessage.swift */; };
 		56973DF8284A64A70098769D /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56973DF7284A64A70098769D /* ListViewController.swift */; };
 		56973DFC284A66080098769D /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56973DFB284A66080098769D /* MainTabBarController.swift */; };
 		56973DFE284A66580098769D /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56973DFD284A66580098769D /* PeopleViewController.swift */; };
@@ -89,6 +91,8 @@
 		5671DF56285B779E00C68605 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5671DF59285B879300C68605 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		56728DD128705CCC00414FF9 /* ListenerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenerService.swift; sourceTree = "<group>"; };
+		56728DD3287067C100414FF9 /* UIApplication + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication + Extension.swift"; sourceTree = "<group>"; };
+		56728DD528706EA300414FF9 /* MMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMessage.swift; sourceTree = "<group>"; };
 		56973DF7284A64A70098769D /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		56973DFB284A66080098769D /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		56973DFD284A66580098769D /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
@@ -159,6 +163,7 @@
 			children = (
 				561759A92853BD7C00DFA113 /* MChat.swift */,
 				56BEFA502854A02E00CE95F2 /* MUser.swift */,
+				56728DD528706EA300414FF9 /* MMessage.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -176,6 +181,7 @@
 				56276B432847E94600788773 /* SegmentedControl + Extension.swift */,
 				56BEFA542854B84300CE95F2 /* UIViewController + Extension.swift */,
 				56EC30E528704D6800384A6A /* UIImage + Extension.swift */,
+				56728DD3287067C100414FF9 /* UIApplication + Extension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -425,6 +431,7 @@
 				5617599E2852465B00DFA113 /* ActiveChatCell.swift in Sources */,
 				5657C258285B206600DD0A6C /* InsertableTextField.swift in Sources */,
 				56E06ED628439D6D0073ADA7 /* Label + Extension.swift in Sources */,
+				56728DD4287067C100414FF9 /* UIApplication + Extension.swift in Sources */,
 				56BEFA532854B6A700CE95F2 /* UserCell.swift in Sources */,
 				56A4BACC286705FC0000B20B /* AuthNavigatingDelegate.swift in Sources */,
 				56EC30E22870421100384A6A /* googleSignIn + UIViewController.swift in Sources */,
@@ -453,6 +460,7 @@
 				56973DF8284A64A70098769D /* ListViewController.swift in Sources */,
 				561759A7285265B700DFA113 /* SectionHeader.swift in Sources */,
 				56E06ED428439AB40073ADA7 /* UIColor + Extension.swift in Sources */,
+				56728DD628706EA300414FF9 /* MMessage.swift in Sources */,
 				56973DFC284A66080098769D /* MainTabBarController.swift in Sources */,
 				56EC30E428704A8700384A6A /* StorageService.swift in Sources */,
 				560161B6284CAF0E00079B40 /* Bundle-Decodable.swift in Sources */,
