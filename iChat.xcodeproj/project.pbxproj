@@ -52,6 +52,8 @@
 		56E18EF72864D8F6004869E9 /* Validators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E18EF62864D8F6004869E9 /* Validators.swift */; };
 		56E18EF92864DAB6004869E9 /* AuthError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E18EF82864DAB6004869E9 /* AuthError.swift */; };
 		56EC30E22870421100384A6A /* googleSignIn + UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EC30E12870421100384A6A /* googleSignIn + UIViewController.swift */; };
+		56EC30E428704A8700384A6A /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EC30E328704A8700384A6A /* StorageService.swift */; };
+		56EC30E628704D6800384A6A /* UIImage + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EC30E528704D6800384A6A /* UIImage + Extension.swift */; };
 		B8CD2686F3AF74393D1081C8 /* Pods_iChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93F8F3783ECCC90453AD7F49 /* Pods_iChat.framework */; };
 /* End PBXBuildFile section */
 
@@ -103,6 +105,8 @@
 		56E18EF62864D8F6004869E9 /* Validators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validators.swift; sourceTree = "<group>"; };
 		56E18EF82864DAB6004869E9 /* AuthError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthError.swift; sourceTree = "<group>"; };
 		56EC30E12870421100384A6A /* googleSignIn + UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "googleSignIn + UIViewController.swift"; sourceTree = "<group>"; };
+		56EC30E328704A8700384A6A /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		56EC30E528704D6800384A6A /* UIImage + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage + Extension.swift"; sourceTree = "<group>"; };
 		93F8F3783ECCC90453AD7F49 /* Pods_iChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D337DB6E99DCC1F6E1204E77 /* Pods-iChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iChat.debug.xcconfig"; path = "Target Support Files/Pods-iChat/Pods-iChat.debug.xcconfig"; sourceTree = "<group>"; };
 		FBEC898AD935AA368F5F943F /* Pods-iChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iChat.release.xcconfig"; path = "Target Support Files/Pods-iChat/Pods-iChat.release.xcconfig"; sourceTree = "<group>"; };
@@ -169,6 +173,7 @@
 				56276B3728452BDA00788773 /* StackView + Extension.swift */,
 				56276B432847E94600788773 /* SegmentedControl + Extension.swift */,
 				56BEFA542854B84300CE95F2 /* UIViewController + Extension.swift */,
+				56EC30E528704D6800384A6A /* UIImage + Extension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -233,6 +238,7 @@
 				561759A82853BD6F00DFA113 /* Models */,
 				5671DF59285B879300C68605 /* AuthService.swift */,
 				56A4BACD28670A480000B20B /* FirestoreService.swift */,
+				56EC30E328704A8700384A6A /* StorageService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -438,11 +444,13 @@
 				56E06ECD28438B860073ADA7 /* UIButoon + Extension.swift in Sources */,
 				56E18EF72864D8F6004869E9 /* Validators.swift in Sources */,
 				561759AA2853BD7C00DFA113 /* MChat.swift in Sources */,
+				56EC30E628704D6800384A6A /* UIImage + Extension.swift in Sources */,
 				5671DF5A285B879300C68605 /* AuthService.swift in Sources */,
 				56973DF8284A64A70098769D /* ListViewController.swift in Sources */,
 				561759A7285265B700DFA113 /* SectionHeader.swift in Sources */,
 				56E06ED428439AB40073ADA7 /* UIColor + Extension.swift in Sources */,
 				56973DFC284A66080098769D /* MainTabBarController.swift in Sources */,
+				56EC30E428704A8700384A6A /* StorageService.swift in Sources */,
 				560161B6284CAF0E00079B40 /* Bundle-Decodable.swift in Sources */,
 				56E18EF92864DAB6004869E9 /* AuthError.swift in Sources */,
 			);
