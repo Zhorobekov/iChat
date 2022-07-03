@@ -26,12 +26,13 @@ class WaitingChatCell: UICollectionViewCell, SelfConfigureCell {
     
     func configure<U>(with value: U) where U : Hashable {
         guard let chat: MChat = value as? MChat else { return }
-//        friendImageView.image = UIImage(named: chat.userImageString)
+        friendImageView.kf.setImage(with: URL(string: chat.friendAvatarStringURL))
     }
     
     private func setupConstraints() {
         
         friendImageView.translatesAutoresizingMaskIntoConstraints = false
+        friendImageView.contentMode = UIView.ContentMode.scaleAspectFill
         
         addSubview(friendImageView)
         
