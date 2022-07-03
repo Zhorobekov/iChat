@@ -4,7 +4,7 @@ RealTime чат с возвомжностью регистрации через 
 
 Использовал следующие фреймворки:
 
-Firebase /n
+Firebase
 
 MessageKit
 
