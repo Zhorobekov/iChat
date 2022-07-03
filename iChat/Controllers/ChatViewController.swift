@@ -52,7 +52,6 @@ class ChatViewController: MessagesViewController {
         
         messageListener = ListenerService.shared.messagesObserve(chat: chat, completion: { (result) in
             switch result {
-                
             case .success(let message):
                 self.insertNewMessage(message: message)
             case .failure(let error):
@@ -178,20 +177,5 @@ extension ChatViewController: InputBarAccessoryViewDelegate {
             }
         }
         inputBar.inputTextView.text = ""
-    }
-}
-
-extension UIScrollView {
-    
-    var isAtBottom: Bool {
-        return contentOffset.y >= verticalOffsetForBottom
-    }
-    
-    var verticalOffsetForBottom: CGFloat {
-      let scrollViewHeight = bounds.height
-      let scrollContentSizeHeight = contentSize.height
-      let bottomInset = contentInset.bottom
-      let scrollViewBottomOffset = scrollContentSizeHeight + bottomInset - scrollViewHeight
-      return scrollViewBottomOffset
     }
 }

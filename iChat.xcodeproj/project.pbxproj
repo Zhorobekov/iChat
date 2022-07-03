@@ -39,6 +39,7 @@
 		56728DD628706EA300414FF9 /* MMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56728DD528706EA300414FF9 /* MMessage.swift */; };
 		56728DD828715BDD00414FF9 /* WaitingChatsNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56728DD728715BDD00414FF9 /* WaitingChatsNavigation.swift */; };
 		56728DDA28716DE300414FF9 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56728DD928716DE300414FF9 /* ChatViewController.swift */; };
+		56728DDC2871A9E500414FF9 /* UIScroll + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56728DDB2871A9E500414FF9 /* UIScroll + Extension.swift */; };
 		56973DF8284A64A70098769D /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56973DF7284A64A70098769D /* ListViewController.swift */; };
 		56973DFC284A66080098769D /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56973DFB284A66080098769D /* MainTabBarController.swift */; };
 		56973DFE284A66580098769D /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56973DFD284A66580098769D /* PeopleViewController.swift */; };
@@ -97,6 +98,7 @@
 		56728DD528706EA300414FF9 /* MMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMessage.swift; sourceTree = "<group>"; };
 		56728DD728715BDD00414FF9 /* WaitingChatsNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingChatsNavigation.swift; sourceTree = "<group>"; };
 		56728DD928716DE300414FF9 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		56728DDB2871A9E500414FF9 /* UIScroll + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScroll + Extension.swift"; sourceTree = "<group>"; };
 		56973DF7284A64A70098769D /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		56973DFB284A66080098769D /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		56973DFD284A66580098769D /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 				56BEFA542854B84300CE95F2 /* UIViewController + Extension.swift */,
 				56EC30E528704D6800384A6A /* UIImage + Extension.swift */,
 				56728DD3287067C100414FF9 /* UIApplication + Extension.swift */,
+				56728DDB2871A9E500414FF9 /* UIScroll + Extension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -429,6 +432,7 @@
 			files = (
 				56276B442847E94600788773 /* SegmentedControl + Extension.swift in Sources */,
 				56728DD828715BDD00414FF9 /* WaitingChatsNavigation.swift in Sources */,
+				56728DDC2871A9E500414FF9 /* UIScroll + Extension.swift in Sources */,
 				56A4BACE28670A480000B20B /* FirestoreService.swift in Sources */,
 				56276B3E2845F13900788773 /* LoginViewController.swift in Sources */,
 				56DBE1FB28684D3400E9771B /* UserError.swift in Sources */,
