@@ -268,7 +268,7 @@ extension ListViewController: WaitingChatsNavigation {
 //MARK: - SearchBarController
 extension ListViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        print(searchText)
+        
     }
 }
 

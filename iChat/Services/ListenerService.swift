@@ -121,9 +121,7 @@ class ListenerService {
             }
             
             snapshot.documentChanges.forEach { (diff) in
-                print(diff)
                 guard let message = MMessage(document: diff.document) else { fatalError() }
-                print("bkb")
                 switch diff.type {
                 case .added:
                     completion(.success(message))
