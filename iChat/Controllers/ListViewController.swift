@@ -10,10 +10,11 @@ import FirebaseFirestore
 
 class ListViewController: UIViewController {
     
-    private let activeChats = [MChat]()
+    private var activeChats = [MChat]()
     private var waitingChats = [MChat]()
     
     private var waitingChatsListener: ListenerRegistration?
+    private var activeChatsListener: ListenerRegistration?
     
     enum Section: Int, CaseIterable {
         case waitingChats
@@ -46,6 +47,7 @@ class ListViewController: UIViewController {
     
     deinit {
         waitingChatsListener?.remove()
+        activeChatsListener?.remove()
     }
     
     override func viewDidLoad() {
@@ -65,6 +67,16 @@ class ListViewController: UIViewController {
                     self.present(chatRequestViewController, animated: true, completion: nil)
                 }
                 self.waitingChats = chats
+                self.reloadData()
+            case .failure(let error):
+                self.showAlert(with: "Ошибка", and: error.localizedDescription)
+            }
+        })
+        
+        activeChatsListener = ListenerService.shared.activeChatsObserve(chats: activeChats, completion: { result in
+            switch result {
+            case .success(let chats):
+                self.activeChats = chats
                 self.reloadData()
             case .failure(let error):
                 self.showAlert(with: "Ошибка", and: error.localizedDescription)
@@ -222,7 +234,8 @@ extension ListViewController: UICollectionViewDelegate {
             chatRequestViewController.delegate = self
             present(chatRequestViewController, animated: true, completion: nil)
         case .activeChats:
-            print(indexPath)
+            let chatViewController = ChatViewController(user: currentUser, chat: chat)
+            navigationController?.pushViewController(chatViewController, animated: true)
         }
     }
 }
@@ -241,7 +254,14 @@ extension ListViewController: WaitingChatsNavigation {
     }
     
     func chatToActive(chat: MChat) {
-        print(#function)
+        FirestoreService.shared.changeToActive(chat: chat) { result in
+            switch result {
+            case .success:
+                self.showAlert(with: "Успешно", and: "Вы приняли запрос на переписку с \(chat.friendUsername)")
+            case .failure(let error ):
+                self.showAlert(with: "Ошибка", and: error.localizedDescription)
+            }
+        }
     }
 }
 

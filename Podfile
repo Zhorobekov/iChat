@@ -12,5 +12,6 @@ target 'iChat' do
   pod 'Firebase/Firestore'
   pod 'Firebase/Storage'
   pod 'Kingfisher'
+  pod 'MessageKit'
 
 end

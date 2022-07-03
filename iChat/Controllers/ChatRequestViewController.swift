@@ -39,6 +39,7 @@ class ChatRequestViewController: UIViewController {
         setupConstraints()
         
         denyButton.addTarget(self, action: #selector(denyButtonTapped), for: .touchUpInside)
+        acceptButton.addTarget(self, action: #selector(acceptButtonTapped), for: .touchUpInside)
     }
     
     @objc private func acceptButtonTapped() {
